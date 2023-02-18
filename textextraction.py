@@ -19,9 +19,12 @@ def handle_message(update, context):
     photo_file = update.message.photo[-1].get_file()
     image_path = 'image.jpg'
     photo_file.download(image_path)
+    image = Image.open(image_path)
+    gray_image = image.convert('L')
+    
 
     # Use OpenCV to preprocess the image and extract the text
-    text = pytesseract.image_to_string(Image.open(image_path))
+    text = pytesseract.image_to_string(gray_image)
     # textt = process_image('image.jpg')
     print(text)
     # processed_text = post_process_text(text)
