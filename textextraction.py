@@ -11,7 +11,7 @@ from PIL import Image
 #     # Convert all characters to lowercase
 #     return text
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # Define a function to handle incoming messages
 def handle_message(update, context):
