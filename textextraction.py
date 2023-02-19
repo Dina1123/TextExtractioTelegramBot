@@ -47,7 +47,7 @@ def handle_message(update, context):
     # context.bot.send_message(chat_id=update.effective_chat.id, text= "Sorry, I couldn't recognize any text in the image")
 
 # Set up the bot and message handler  
-updater = Updater('6080419832:AAEPGEXdz_YDF-DliSnDRSCClUa8zzghWQM')
+updater = Updater('')
 message_handler = MessageHandler(Filters.photo, handle_message)
 
 updater.dispatcher.add_handler(message_handler)
