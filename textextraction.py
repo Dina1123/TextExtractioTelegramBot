@@ -5,7 +5,7 @@ from telegram.ext import Filters
 import pytesseract
 from PIL import Image
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 # Define a function to handle incoming messages
 def handle_message(update, context):
